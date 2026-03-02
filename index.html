@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:,">
+</head>
+
+<body>
+  <main class="container">
+
+  <div class="avatar-wrapper">
+  <img src="assets/rootfox.png" alt="rootfox avatar" class="avatar" />
+</div>
+
+  <h1>Password Strength Checker</h1>
+    <p class="subtitle">Type a password and see if you should change it!</p>
+
+    <div class="card">
+  
+      <div class="input-row">
+        <input
+          id="password"
+          type="password"
+          class="input"
+          placeholder="Enter a password..."
+          autocomplete="new-password"
+          aria-describedby="strengthText"
+        />
+        <button id="toggleBtn" class="btn" type="button" aria-label="Show password">
+          Show
+        </button>
+      </div>
+
+      <div class="meter" aria-hidden="true">
+        <div id="meterBar" class="meter-bar" style="width: 0%"></div>
+      </div>
+
+      <p id="strengthText" class="strength-text">Strength: —</p>
+      <p id="commonWarn" class="common-warn" hidden>
+  ⚠️ This password is one of the 1000 most common passwords. Avoid using it.</p>
+
+      <ul class="checks" aria-label="Password requirements checklist">
+        <li id="chkLength" class="check">At least 12 characters</li>
+        <li id="chkLower" class="check">Contains lowercase (a-z)</li>
+        <li id="chkUpper" class="check">Contains uppercase (A-Z)</li>
+        <li id="chkNumber" class="check">Contains a number (0-9)</li>
+        <li id="chkSymbol" class="check">Contains a symbol (!@#$...)</li>
+      </ul>
+
+      <p id="hintText" class="hint">Use a password generator and a password manager.</p>
+    </div>
+
+    <footer class="footer">
+      <small>Built for learning. Do not log or store real passwords pls :)</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
