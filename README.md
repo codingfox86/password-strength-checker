@@ -2,6 +2,8 @@
 
 A minimal dark-themed password strength checker built with HTML, CSS and JavaScript.
 
+_Feel free to use the cat avatar too :D_
+
 ## Features
 
 - Live strength evaluation
@@ -21,4 +23,4 @@ A minimal dark-themed password strength checker built with HTML, CSS and JavaScr
 ```bash
 python3 -m http.server 8000
 
-Open: http://localhost:8000
+http://localhost:8000
